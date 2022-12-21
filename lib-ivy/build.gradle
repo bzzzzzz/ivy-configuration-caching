@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+    id 'ivy-publish'
+}
+
+repositories {
+    mavenCentral()
+}
+
+publishing {
+    publications {
+        ivy(IvyPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        ivy {
+            url = file("example-repo")
+        }
+    }
+}

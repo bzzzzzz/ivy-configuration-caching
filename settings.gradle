@@ -1,0 +1,3 @@
+rootProject.name = 'publishing-experiment'
+include('lib-ivy', 'lib-maven')
+enableFeaturePreview "STABLE_CONFIGURATION_CACHE"
